@@ -1,0 +1,287 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont{
+    display: flex;
+    background-color: #1E1B4B;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#about,#skills,#projects,#contact{
+    scroll-margin-top: 130px;
+}
+
+h2{
+    padding: 20px;
+    color: #F5F3FF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a{
+    color: #F5F3FF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    color: #6D5DFC;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pfp{
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    padding: 20px;
+}
+
+img{
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: rgba(30, 30, 122, 0.526) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transition: 0.3s;
+}
+
+img:hover{
+    box-shadow: rgba(51, 51, 255, 0.7) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    transform: translateY(-10px);
+}
+
+#hero{
+    color: #1E1B4B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    color: #443e93;
+}
+
+.btn{
+    background-color: #1E1B4B;
+    padding: 15px;
+    color: #F5F3FF;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: #6D5DFC;
+}
+
+#font{
+    padding: 20px;
+}
+
+.self{
+    padding-left: 20px;
+    color: #1E1B4B;
+}
+
+#about-title{
+    font-size: 25px;
+}
+
+.skill{
+    padding-left: 20px;
+    color: #1E1B4B;
+}
+
+#skill-title{
+    font-size: 25px;
+}
+
+#main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#skill-card{
+    box-shadow: rgba(23, 5, 141, 0.459) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+#skill-card:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(43, 19, 200, 0.834) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;;
+}
+
+.project{
+    padding-left: 20px;
+    color: #1E1B4B;
+}
+
+#project-title{
+    font-size: 25px;
+}
+
+.contact-form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#fbtn{
+    background-color: #7864c8;
+    padding: 20px;
+    width: 100px;
+    border-radius: 20px;
+    border: solid #7864c8;
+}
+
+#fbtn:hover{
+    cursor: pointer;
+}
+
+.container{
+    padding-left: 20px;
+    color: #1E1B4B;
+    background-color: #F5F3FF;
+}
+
+#contact-text{
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+form label{
+    text-decoration: underline;
+}
+
+form input,form textarea{
+    padding: 15px;
+}
+
+.top{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+#top-btn{
+    background-color: #1E1B4B;
+    padding: 15px;
+    color: #F5F3FF;
+    border-radius: 20px;
+    text-decoration: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#footer-text{
+    padding-left: 20px;
+    color: #1E1B4B;
+}
+
+@media screen and (max-width: 768px) {
+
+    #hero {
+        gap: 10px;
+    }
+
+    #pfp img {
+        width: 200px;
+    }
+
+    #main {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .cont {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .cont h2 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #font {
+        padding: 20px;
+    }
+
+    #pfp {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #pfp img {
+        width: 180px;
+    }
+
+    .self {
+        padding: 15px;
+    }
+
+    #main {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #skill-card {
+        width: 85%;
+        height: auto;
+        min-height: 150px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #fbtn {
+        width: 100%;
+    }
+
+    #top-btn {
+        right: 12px;
+        bottom: 12px;
+        padding: 12px;
+        font-size: 13px;
+    }
+
+}
